@@ -1,0 +1,5 @@
+Idee per il sito del Pixel Café
+- aggiungere la pagina "Chi siamo"
+- mettere una mappa con l'indirizzo
+- form per prenotare un tavolo
+- cambiare i colori del footer

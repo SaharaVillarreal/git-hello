@@ -2,4 +2,12 @@ Idee per il sito del Pixel Café
 - aggiungere la pagina "Chi siamo"
 - mettere una mappa con l'indirizzo
 - form per prenotare un tavolo
+--Nombre de la persona que esta reservando la mesa
+--Email
+--Cuantas personas - depende de cuantas personas habra disponibilidad de fecha
+---1 o 2 --> enviar email para confirmar
+---3 o 6 --> enviar email para confirmar
+---mas de 7 --> enviar email para confirmar --> que responda y saber la cantidad de personas o para un evento
+--Disponibilidad de fecha - Para cuando necesita la mesa
+
 - cambiare i colori del footer

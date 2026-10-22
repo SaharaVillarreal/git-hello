@@ -31,12 +31,66 @@
         <li>Domenica: chiuso (anche i server hanno bisogno di riposo)</li>
       </ul>
     </section>
-  </main>
-
+    
+<div class="container">
+  <div class="form_area">
+    <p class="title">Prenota un tavolo</p>
+    <form id="booking-form">
+      <div class="form_group">
+        <label class="sub_title" for="name">Nome *</label>
+        <input id="name" name="name" placeholder="Inserisci il tuo nome" class="form_style" type="text" required>
+      </div>
+      <div class="form_group">
+        <label class="sub_title" for="email">Email *</label>
+        <input id="email" name="email" placeholder="Inserisci la tua email" class="form_style" type="email" required>
+      </div>
+      <div class="form_group">
+        <label class="sub_title" for="persone">Per quante persone? *</label>
+        <select name="persone" id="persone" class="form_style" required>
+          <option value="">Seleziona il numero di persone</option>
+          <option value="1">1 persona</option>
+          <option value="2">2 persone</option>
+          <option value="3">3 persone</option>
+          <option value="4">4 persone</option>
+          <option value="5">5 persone</option>
+          <option value="6">6 persone</option>
+          <option value="piu-persone">Più di 6 persone</option>
+        </select>
+      </div>
+      <!-- Messaggio per gruppi numerosi -->
+      <div id="gruppo-message" hidden>
+        <p>Per prenotazioni di più di 6 persone, contattaci direttamente al numero:</p>
+        <p>
+          <a id="telefono-link" href="tel:+390000000000">
+            <strong id="telefono-testo">+39 000 000 0000</strong>
+          </a>
+        </p>
+        <p>Ti aiuteremo a organizzare al meglio la tua visita!</p>
+      </div>
+      <!-- Calendario: appare soltanto per 1-6 persone -->
+      <div class="form_group" id="data-group" hidden>
+        <label class="sub_title" for="date">Data della prenotazione *</label>
+         <input id="date" name="date" class="form_style" type="date" required disabled>
+      </div>
+      <p id="form-message" role="status" aria-live="polite"></p>
+      <div id="submit-group" hidden>
+        <p style="color: rgb(108, 93, 83); font-size: 14px;">
+          Controlla i tuoi dati. <br>
+          Ti invieremo un'email della prenotazione.
+        </p>
+        <button class="btn" type="submit" id="submit-btn">
+          PRENOTA ORA
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
   <footer class="footer">
     <p>© 2026 Pixel Café. Via Roma 2 - Piemonte</p>
   </footer>
 
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
